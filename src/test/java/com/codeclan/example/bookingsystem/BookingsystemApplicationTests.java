@@ -3,6 +3,7 @@ package com.codeclan.example.bookingsystem;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
 @SpringBootTest
 class BookingsystemApplicationTests {
 

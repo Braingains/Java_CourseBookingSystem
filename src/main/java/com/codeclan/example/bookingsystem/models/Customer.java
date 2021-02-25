@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "customers")
 public class Customer {
 
     @Id
@@ -25,7 +25,7 @@ public class Customer {
     @JsonIgnoreProperties({"customer"})
     @OneToMany(mappedBy = "customer")
     private List<Booking> bookings;
-    
+
 
     public Customer(String name, String town, int age) {
         this.name = name;
