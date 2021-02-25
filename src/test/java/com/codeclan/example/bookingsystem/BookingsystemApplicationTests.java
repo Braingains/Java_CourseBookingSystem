@@ -56,7 +56,7 @@ class BookingsystemApplicationTests {
 
 	@Test
 	public void canFindBookingsByDate() {
-		List<Booking> foundBookings = bookingRepository.findAllBookingsByDate("25/2/21");
+		List<Booking> foundBookings = bookingRepository.findAllBookingsByDate("25-2-21");
 		assertEquals(1, foundBookings.size());
 	}
 
