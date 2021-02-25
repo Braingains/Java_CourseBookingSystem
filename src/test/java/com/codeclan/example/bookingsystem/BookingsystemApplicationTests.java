@@ -1,6 +1,7 @@
 package com.codeclan.example.bookingsystem;
 
 import com.codeclan.example.bookingsystem.models.Course;
+import com.codeclan.example.bookingsystem.models.Customer;
 import com.codeclan.example.bookingsystem.repositories.BookingRepository;
 import com.codeclan.example.bookingsystem.repositories.CourseRepository;
 import com.codeclan.example.bookingsystem.repositories.CustomerRepository;
@@ -38,6 +39,12 @@ class BookingsystemApplicationTests {
 	public void canFindCourseByRating() {
 		List<Course> foundCourses = courseRepository.findCourseNameByRating(5);
 		assertEquals("Professional Software Development", foundCourses.get(0).getName());
+	}
+
+	@Test
+	public void canFindCustomerByCourse() {
+		List<Customer> foundCustomers = customerRepository.findAllByBookingsCourseId(2L);
+		assertEquals("Ewan", foundCustomers.get(0).getName());
 	}
 
 }
