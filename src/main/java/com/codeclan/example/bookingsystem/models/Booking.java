@@ -27,8 +27,10 @@ public class Booking {
 
 
 
-    public Booking(String date) {
+    public Booking(String date, Customer customer, Course course) {
         this.date = date;
+        this.course = course;
+        this.customer = customer;
     }
 
 

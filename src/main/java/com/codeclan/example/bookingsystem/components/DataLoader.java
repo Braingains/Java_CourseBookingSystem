@@ -41,10 +41,10 @@ public class DataLoader implements ApplicationRunner {
         Course dataAnalysis = new Course("Professional Data Analysis", "Auchtermuchty", 1);
         courseRepository.save(dataAnalysis);
 
-        Booking booking1 = new Booking("25/2/21");
+        Booking booking1 = new Booking("25/2/21", ewan, softwareDevelopment);
         bookingRepository.save(booking1);
 
-        Booking booking2 = new Booking("26/2/21");
+        Booking booking2 = new Booking("26/2/21", max, dataAnalysis);
         bookingRepository.save(booking2);
 
     }
